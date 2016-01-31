@@ -16,14 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = TLRandomColor;
+    self.view.backgroundColor = [UIColor grayColor];
+    self.view.alpha = 0.1;
+    UIImageView *backgroundImageView = [[UIImageView alloc] initWithFrame:self.view.frame];
+    backgroundImageView.image = [UIImage imageNamed:@"left_bg.png"];
+    [self.view addSubview:backgroundImageView];
+    backgroundImageView.alpha = 0.3;
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 
 @end

@@ -25,8 +25,6 @@
     //2.设置根控制器
     //初始化左视图
     TLLeftDrawerController *leftTVC = [[TLLeftDrawerController alloc]init];
-//    TLNavigationViewController *leftNC = [[TLNavigationViewController alloc]initWithRootViewController:leftTVC];
-//    leftNC.view.backgroundColor = [UIColor redColor];
     TLTabbarViewController *tabarVc = [[TLTabbarViewController alloc] init];
     //初始化抽屉视图控制器
     MMDrawerController *drawerController = [[MMDrawerController alloc]initWithCenterViewController:tabarVc leftDrawerViewController:leftTVC];

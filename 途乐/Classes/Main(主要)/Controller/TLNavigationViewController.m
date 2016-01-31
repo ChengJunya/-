@@ -31,8 +31,8 @@
     disableTextAttrs[NSFontAttributeName] = textAttrs[NSFontAttributeName];
     [item setTitleTextAttributes:disableTextAttrs forState:UIControlStateDisabled];
 
-    //UIApplication设置状态栏的样式
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+//    //UIApplication设置状态栏的样式
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 
     //设置导航条标题的字体及颜色
     UINavigationBar *navBar = [UINavigationBar appearance];
